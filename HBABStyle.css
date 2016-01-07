@@ -1,0 +1,212 @@
+/* <system section="theme" selected="8454420450093337097"> */
+@import url("http://hatenablog.com/theme/8454420450093337097.css");
+/* </system> */
+
+/* 2カラムレイアウト */
+
+#container #content {
+    width: 1260px;
+}
+#main {
+  width: 890px;
+  float: left;
+}
+#box2 {
+  width: 300px;
+  padding: 24px;
+  float: right;
+  margin-top: 0;
+  margin-bottom: 60px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  border-radius: 2px;
+  -webkit-animation-duration: 0.4s;
+  -webkit-animation-duration: 0.4s;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-name: slideRight;
+  -webkit-animation-name: slideRight;
+  -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+@-webkit-keyframes slideRight {
+  0% {
+    -webkit-transform: translateX(6.25em);
+    transform: translateX(6.25em);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes slideRight {
+  0% {
+    -webkit-transform: translateX(6.25em);
+    transform: translateX(6.25em);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+#box2-inner {
+  width: auto;
+}
+.hatena-module {
+  text-align: left;
+  padding-right: 0;
+  width: 300px;
+  float: left;
+}
+
+
+
+@media (max-width: 1024px) {
+  #main, #box2, .hatena-module {
+    width: 100%;
+    float: none;
+  }
+  #box2 {
+	padding: 0;
+	background-color: transparent;
+	box-shadow: none;
+	border-radius: initial;
+	-webkit-animation-duration: initial;
+	-webkit-animation-duration: initial;
+	-webkit-animation-fill-mode: none;
+	-webkit-animation-fill-mode: none;
+	-webkit-animation-name: initial;
+	-webkit-animation-name: initial;
+	-webkit-animation-timing-function: initial;
+	-webkit-animation-timing-function: initial;
+  }
+}
+
+/* カスタムカラー */
+/* グローバルヘッダー（一番上のはてなロゴ等があるエリア） */
+#globalheader-container {
+  background-color: #212121;
+  color: #fff;
+}
+/* ヘッダー（ブログ名があるエリア） */
+#blog-title {
+  background-color: #616161;
+}
+#title a {
+  color: #ffffff;
+}
+/* タイトルをホバーした際のカラー */
+#title a:after {
+  background-color: #FFFFFF;
+}
+/* フッター */
+#footer {
+  background-color: #414141;
+  color: #ffffff;
+}
+/* 日付 */
+.date-day {
+  background: #212121;
+  color: #fff;
+}
+/* 続きを読む */
+a.entry-see-more {
+  background-color: #212121;
+  color: #fff;
+}
+/* 読者になる */
+.hatena-follow-button {
+  color: #fff !important;
+  background: #3F51B5!important;
+}
+
+
+/* 目次 */
+
+article .entry-content .sectionList {
+    background: #f8f8f8;
+    padding: 10px;
+    margin: 30px 10px;
+    border: 1px solid #dddddd;
+}
+
+article .entry-content .sectionList h2 {
+    font-size: 110%;
+    margin: 0;
+}
+
+article .entry-content .sectionList ol {
+    margin: 15px 10px 0;
+    padding: 0 0 0 15px;
+    list-style: decimal;
+}
+
+.entry-content h4{
+    color: #444444;
+    background: #f3f3f3;
+    padding: 10px 15px;
+    border-left: 7px solid #5abfdc;
+    font-weight: bold;
+    font-size: 27px;
+    }
+
+.entry-content h5{
+    color: #444444;
+    padding: 5px 8px;
+    border-bottom: 2px solid #5abfdc;
+    font-weight: bold;
+    font-size: 22px;
+    }
+
+/* プロフィール */
+.tabs {
+  margin: 10px;
+  -moz-box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.4);
+  -o-box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.4);
+  -ms-box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.4);
+}
+
+.tabs > ul:first-of-type {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.tabs > ul:first-of-type li {
+  flex: 1;
+  cursor: pointer;
+  display: block;
+  float: left;
+  height: 50px;
+  background: #c1cfd9;
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.tabs > ul:first-of-type li:nth-child(2n) {
+  background: #6d6d6d;
+}
+.tabs > ul:first-of-type li.active {
+  background: #ffffff;
+  color: #6d6d6d;
+}
+
+.tabs-content {
+  background: #ffffff;
+}
+
+.tab-prof-img {
+  float: left;
+}
+
+.tab-profile {
+  margin-left: 90px;
+}
+
+article {
+  padding: 30px;
+}
